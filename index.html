@@ -4,11 +4,14 @@
 		<meta charset=utf-8 />
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Picturefill</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="external/matchmedia.js"></script>
 		<script src="picturefill.js"></script>
+		
 		<style>
 			body { font-family: sans-serif }
 			img {  max-width: 100% }
+			span { display:inline-block; *display:inline; *zoom:1; }
 		</style>
 	</head>
 	<body>
@@ -17,74 +20,74 @@
 				
 		<p>For more info: <a href="http://github.com/scottjehl/picturefill">see project home.</a></p>
 		
-		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="external/imgs/small.jpg"></span>
-			<span data-src="external/imgs/medium.jpg" data-media="(min-width: 400px)"></span>
-			<span data-src="external/imgs/large.jpg" data-media="(min-width: 800px)"></span>
-			<span data-src="external/imgs/extralarge.jpg" data-media="(min-width: 1000px)"></span>
+		<span class="test1" data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+			<span data-src="http://placehold.it/100x200&text=Image1+100x200"></span>
+			<span data-src="http://placehold.it/400x600&text=Image1+400x600" data-media="(min-width: 400px)"></span>
+			<span data-src="http://placehold.it/800x1000&text=Image1+800x1000" data-media="(min-width: 800px)"></span>
+			<span data-src="http://placehold.it/1000x1200&text=Image1+1000x1200" data-media="(min-width: 1000px)"></span>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+				<span data-src="http://placehold.it/800x1000&text=Image1+800x1000"></span>
+			<![endif]-->
 
 			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+			<noscript><img src="http://placehold.it/100x200&text=Image1+100x200" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+		</span>
+		<br/>
+		<span class="test3" data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+			<span data-src="http://placehold.it/100x200&text=Image2+100x200"></span>
+			<span data-src="http://placehold.it/400x600&text=Image2+400x600" data-media="(min-width: 400px)"></span>
+			<span data-src="http://placehold.it/800x1000&text=Image2+800x1000" data-media="(min-width: 800px)"></span>
+			<span data-src="http://placehold.it/1000x1200&text=Image2+1000x1200" data-media="(min-width: 1000px)"></span>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+				<span data-src="http://placehold.it/800x1000&text=Image2+800x1000"></span>
+			<![endif]-->
+
+			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+			<noscript><img src="http://placehold.it/100x200&text=Image2+100x200" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
 		</span>
 		<br/>
 		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image1"></span>
-			<span data-src="http://placehold.it/200x400&text=Image1" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image1" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image1" data-media="(min-width: 1000px)"></span>
+			<span data-src="http://placehold.it/100x200&text=Image3+100x200"></span>
+			<span data-src="http://placehold.it/400x600&text=Image3+400x600" data-media="(min-width: 400px)"></span>
+			<span data-src="http://placehold.it/800x1000&text=Image3+800x1000" data-media="(min-width: 800px)"></span>
+			<span data-src="http://placehold.it/1000x1200&text=Image3+1000x1200" data-media="(min-width: 1000px)"></span>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+				<span data-src="http://placehold.it/800x1000&text=Image3+800x1000"></span>
+			<![endif]-->
 
 			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image1" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+			<noscript><img src="http://placehold.it/100x200&text=Image3+100x200" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
 		</span>
 		<br/>
 		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image2"></span>
-			<span data-src="http://placehold.it/200x400&text=Image2" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image2" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image2" data-media="(min-width: 1000px)"></span>
+			<span data-src="http://placehold.it/100x200&text=Image4+100x200"></span>
+			<span data-src="http://placehold.it/400x600&text=Image4+400x600" data-media="(min-width: 400px)"></span>
+			<span data-src="http://placehold.it/800x1000&text=Image4+800x1000" data-media="(min-width: 800px)"></span>
+			<span data-src="http://placehold.it/1000x1200&text=Image4+1000x1200" data-media="(min-width: 1000px)"></span>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+				<span data-src="http://placehold.it/800x1000&text=Image4+800x1000"></span>
+			<![endif]-->
 
 			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image2" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+			<noscript><img src="http://placehold.it/100x200&text=Image4+100x200" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
 		</span>
 		<br/>
 		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image3"></span>
-			<span data-src="http://placehold.it/200x400&text=Image3" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image3" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image3" data-media="(min-width: 1000px)"></span>
+			<span data-src="http://placehold.it/100x200&text=Image5+100x200"></span>
+			<span data-src="http://placehold.it/400x600&text=Image5+400x600" data-media="(min-width: 400px)"></span>
+			<span data-src="http://placehold.it/800x1000&text=Image5+800x1000" data-media="(min-width: 800px)"></span>
+			<span data-src="http://placehold.it/1000x1200&text=Image5+1000x1200" data-media="(min-width: 1000px)"></span>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+				<span data-src="http://placehold.it/800x1000&text=Image5+800x1000"></span>
+			<![endif]-->
 
 			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image3" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+			<noscript><img src="http://placehold.it/100x200&text=Image5+100x200" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
 		</span>
-		<br/>
-		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image4"></span>
-			<span data-src="http://placehold.it/200x400&text=Image4" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image4" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image4" data-media="(min-width: 1000px)"></span>
-
-			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image4" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
-		</span>
-		<br/>
-		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image5"></span>
-			<span data-src="http://placehold.it/200x400&text=Image5" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image5" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image5" data-media="(min-width: 1000px)"></span>
-
-			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image5" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
-		</span>
-		<br/>
-		<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-			<span data-src="http://placehold.it/100x300&text=Image6"></span>
-			<span data-src="http://placehold.it/200x400&text=Image6" data-media="(min-width: 400px)"></span>
-			<span data-src="http://placehold.it/400x600&text=Image6" data-media="(min-width: 800px)"></span>
-			<span data-src="http://placehold.it/600x800&text=Image6" data-media="(min-width: 1000px)"></span>
-
-			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-			<noscript><img src="http://placehold.it/100x300&text=Image6" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
-		</span>			
 	</body>
 </html>
