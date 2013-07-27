@@ -1,5 +1,11 @@
 # Lazy load images and Picturefill
-Loads images when element is scroll in view.
 
-*forked from:* [https://github.com/scottjehl/picturefill](https://github.com/scottjehl/picturefill)
-*pinched inview:* [http://remysharp.com/downloads/jquery.inview.js](http://remysharp.com/downloads/jquery.inview.js)
+Loads images when element is in view.
+
+**picturefill usage:** [https://github.com/scottjehl/picturefill/blob/master/README.md](https://github.com/scottjehl/picturefill/blob/master/README.md)
+
+**pinched ideas from:**
+
+[http://remysharp.com/downloads/jquery.inview.js](http://remysharp.com/downloads/jquery.inview.js)
+
+[http://www.quirksmode.org/js/findpos.html](http://www.quirksmode.org/js/findpos.html)
